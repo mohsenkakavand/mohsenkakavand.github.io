@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
   <style>
-    :root{--bg:#f4efe4;--bg2:#fbf7ee;--navy:#102a56;--blue:#0b67e3;--teal:#0aa39a;--gold:#d89a21;--text:#374151;--muted:#6b7280;--card:#fffdf8;--max:1180px}
+    :root{--bg:#f4efe4;--bg2:#fbf7ee;--navy:#102a56;--blue:#0b67e3;--teal:#0aa39a;--gold:#d89a21;--green:#0b8f72;--text:#374151;--muted:#6b7280;--card:#fffdf8;--max:1180px}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;font-family:Arial,sans-serif;color:var(--text);line-height:1.55;background:radial-gradient(circle at 88% 7%,rgba(11,103,227,.08),transparent 25%),radial-gradient(circle at 12% 18%,rgba(216,154,33,.09),transparent 24%),linear-gradient(180deg,var(--bg2),var(--bg))}
@@ -24,13 +24,14 @@
     .eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--gold)}
     h1{font-size:clamp(2.9rem,5vw,4.1rem);line-height:1;margin:10px 0 14px;color:var(--navy);letter-spacing:-.035em}
     .role{font-size:clamp(1.12rem,1.8vw,1.45rem);font-weight:800;color:var(--blue);margin-bottom:10px;white-space:nowrap}
-    .topics{font-weight:600;color:#53627a;margin-bottom:22px}
-    .intro{font-size:1rem;max-width:760px}
-    .intro p{margin:0 0 12px}
-    .research-focus{margin-top:16px;padding:13px 15px;background:rgba(255,253,248,.78);border:1px solid rgba(16,42,86,.1);border-left:4px solid var(--blue);border-radius:10px;font-size:.94rem;color:#4d5a70}
+    .topics{font-weight:600;color:#53627a;margin-bottom:20px}
+    .bio-card{max-width:780px;background:rgba(255,253,248,.9);border:1px solid rgba(16,42,86,.14);border-left:4px solid var(--blue);border-radius:3px;padding:18px 20px;box-shadow:0 8px 22px rgba(16,42,86,.05)}
+    .bio-card p{margin:0;font-size:.98rem}
+    .institution{color:var(--green);font-weight:700}
+    .research-focus{margin-top:14px;padding-top:12px;border-top:1px solid rgba(16,42,86,.12);font-size:.92rem;color:#4d5a70}
     .research-focus strong{color:var(--navy)}
     .buttons{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
-    .btn{padding:13px 20px;border-radius:11px;font-weight:700;border:1px solid #9ec4f6}
+    .btn{padding:13px 20px;border-radius:8px;font-weight:700;border:1px solid #9ec4f6}
     .primary{background:var(--blue);color:white;border-color:var(--blue)}
 
     .profile-wrap{text-align:center}
@@ -65,7 +66,7 @@
     footer{text-align:center;color:#7a8594;font-size:.84rem;padding:15px 0 35px}
 
     @media(max-width:1050px){.role{white-space:normal}}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.intro{margin:auto}.research-focus{text-align:left}.buttons{justify-content:center}.menu{display:none}.g4,.g3{grid-template-columns:repeat(2,1fr)}.socials{gap:8px;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;max-width:100%}}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.bio-card{margin:auto;text-align:left}.buttons{justify-content:center}.menu{display:none}.g4,.g3{grid-template-columns:repeat(2,1fr)}.socials{gap:8px;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;max-width:100%}}
     @media(max-width:620px){.container{width:calc(100% - 24px)}.g4,.g3,.g2{grid-template-columns:1fr}.profile{width:220px;height:220px}.connect{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
@@ -86,12 +87,10 @@
       <h1>Dr Mohsen Kakavand</h1>
       <div class="role">Lecturer &amp; Researcher | IEEE Senior Member</div>
       <div class="topics">AI Engineering · Machine Learning · AI in Digital Forensics · Cybersecurity · LLMs in Cybersecurity</div>
-      <div class="intro">
-        <p>I am a Lecturer and Researcher in Cybersecurity at Hanze University of Applied Sciences in Groningen, the Netherlands. My academic and research work focuses on artificial intelligence, machine learning, digital forensics, cybersecurity, and the application of Large Language Models in cybersecurity and digital investigations.</p>
-        <p>My PhD research focused on AI-driven anomaly detection for web service attacks, with particular emphasis on applying machine learning and text-mining techniques to cybersecurity. Previously, I served as a Lecturer in Cybersecurity at the School of Computer Science and Engineering, UNSW Sydney, Australia.</p>
-        <p>In addition to my academic work, I am an IEEE Senior Member and a Certified EC-Council Instructor (CEI), with experience in cybersecurity education, professional training, applied research, and the development of practical security laboratories.</p>
+      <div class="bio-card">
+        <p>I am a Lecturer and Researcher in Cybersecurity at <span class="institution">Hanze University of Applied Sciences</span> in Groningen, the Netherlands. My research focuses on machine learning, AI in digital forensics, cybersecurity, LLMs in cybersecurity, anomaly detection, and evidence-centric investigation. My PhD examined AI-driven anomaly detection for web service attacks using machine learning and text-mining techniques. Previously, I served as a Lecturer in Cybersecurity at the School of Computer Science and Engineering, <span class="institution">UNSW Sydney</span>. I am also an IEEE Senior Member and Certified EC-Council Instructor (CEI), with experience in teaching, applied research, and professional cybersecurity training.</p>
+        <div class="research-focus"><strong>Research Interests:</strong> Machine Learning, AI in Digital Forensics, Cybersecurity, LLMs in Cybersecurity, Anomaly Detection, and Evidence-Centric Digital Investigation.</div>
       </div>
-      <div class="research-focus"><strong>Research Interests:</strong> Machine Learning, AI in Digital Forensics, Cybersecurity, LLMs in Cybersecurity, Anomaly Detection, and Evidence-Centric Digital Investigation.</div>
       <div class="buttons"><a class="btn primary" href="#research">Explore Research →</a><a class="btn" href="#projects">View Projects →</a></div>
     </div>
     <div class="profile-wrap">
