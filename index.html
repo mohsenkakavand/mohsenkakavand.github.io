@@ -20,15 +20,15 @@
     .menu{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem}
     .menu a:hover{color:var(--blue)}
 
-    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center;padding:68px 0 48px}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center;padding:34px 0 44px}
     .eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--gold)}
     h1{font-size:clamp(2.9rem,5vw,4.1rem);line-height:1;margin:10px 0 14px;color:var(--navy);letter-spacing:-.035em}
     .role{font-size:clamp(1.12rem,1.8vw,1.45rem);font-weight:800;color:var(--blue);margin-bottom:10px;white-space:nowrap}
     .topics{font-weight:600;color:#53627a;margin-bottom:20px}
-    .bio-card{max-width:780px;background:transparent;border:1px solid rgba(16,42,86,.14);border-left:4px solid var(--blue);border-radius:3px;padding:18px 20px;box-shadow:none}
+    .bio-card{max-width:780px;background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
     .bio-card p{margin:0;font-size:.98rem}
     .institution{color:var(--green);font-weight:700}
-    .research-focus{margin-top:14px;padding-top:12px;border-top:1px solid rgba(16,42,86,.12);font-size:.92rem;color:#4d5a70}
+    .research-focus{margin-top:14px;padding-top:0;border-top:none;font-size:.92rem;color:#4d5a70}
     .research-focus strong{color:var(--navy)}
     .buttons{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
     .btn{padding:13px 20px;border-radius:8px;font-weight:700;border:1px solid #9ec4f6}
@@ -66,7 +66,7 @@
     footer{text-align:center;color:#7a8594;font-size:.84rem;padding:15px 0 35px}
 
     @media(max-width:1050px){.role{white-space:normal}}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.bio-card{margin:auto;text-align:left}.buttons{justify-content:center}.menu{display:none}.g4,.g3{grid-template-columns:repeat(2,1fr)}.socials{gap:8px;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;max-width:100%}}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:26px}.bio-card{margin:auto;text-align:left}.buttons{justify-content:center}.menu{display:none}.g4,.g3{grid-template-columns:repeat(2,1fr)}.socials{gap:8px;overflow-x:auto;justify-content:flex-start;padding-bottom:4px;max-width:100%}}
     @media(max-width:620px){.container{width:calc(100% - 24px)}.g4,.g3,.g2{grid-template-columns:1fr}.profile{width:220px;height:220px}.connect{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
